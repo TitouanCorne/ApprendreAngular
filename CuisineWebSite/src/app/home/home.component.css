@@ -1,0 +1,7 @@
+.recepeCardList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.recepeCard{
+    width: 30%;
+}

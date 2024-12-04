@@ -1,0 +1,12 @@
+<div class="recepeCard">
+    <div class="recepeImage">
+        <img
+        [src]="recepecard.image"
+        alt="Photo de {{ recepecard.name }}"
+        />   
+    </div>
+    <div>
+        <h2 class="recepeName" (click)="goToDetails(recepecard.id)"> {{recepecard.name}} </h2>
+        <p class="recepeOwner"> de {{recepecard.owner}} </p>
+    </div>
+</div>
