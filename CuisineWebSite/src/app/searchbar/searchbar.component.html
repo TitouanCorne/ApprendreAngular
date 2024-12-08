@@ -1,0 +1,34 @@
+<div class="filterContainer">
+    <div class="searchBar">
+        <input id = "input-searchbar" type="text" placeholder="Rechercher une recette" #filter (keydown.enter)="filterResults(filter.value, type.value, owner.value)"/>
+        <span class="search-icon">
+            <img id="icon-loupe" src="assets/icon/icon-loupe.png" alt="icon">
+        </span>
+    </div>
+    <div class="recepeType">
+        <span class="type-icon">
+            <img id="icon-plat-chaud" src="assets/icon/icon-plat-chaud.png" alt="icon">
+        </span>
+        <select #type (change)="filterResults(filter.value, type.value, owner.value)">
+            <option value="Tout type de plat">Tout type de plat</option>
+            <option value="Apéritif">Apéritif</option>
+            <option value="Entrée">Entrée</option>
+            <option value="Plat">Plat</option>
+            <option value="Dessert et gateaux">Dessert et gateaux</option>
+            <option value="Boisson">Boisson</option>
+        </select>
+    </div>
+    <div class="recepeOwner">
+        <span class="owner-icon">
+            <img id="icon-chef" src="assets/icon/icon-chef.png" alt="icon">
+        </span>
+        <select #owner (change)="filterResults(filter.value, type.value, owner.value)">
+            <option value="Tout le monde">Tout le monde</option>
+            <option value="Loïc">Loïc</option>
+            <option value="Sophie">Sophie</option>
+            <option value="Perrine">Perrine</option>
+            <option value="Titouan">Titouan</option>
+            <option value="Erell">Erell</option>
+        </select>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+.filterContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.searchBar{
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    background-color: #FDA38A;
+    border-radius: 5px;
+}
+.recepeType{
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+}
+.recepeOwner{
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+}
+input{
+    flex-grow: 1;
+    width: 95%;
+    height: 30px;
+    background-color: #FDA38A;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: none;  
+    border-radius: 5px;
+}
+input:focus {
+    outline: none; /* Retirer le contour par défaut (optionnel) */
+    background-color: #f7ac98;
+}
+#input-searchbar{
+    border-radius: 5px 0px 0px 5px;
+}
+.search-icon{
+    background-color: #FDA38A;
+    width: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: none;  
+    border-radius: 0px 5px 5px 0px;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;     /* Centrer verticalement */
+}
+
+select{
+    flex-grow: 1;
+    width: 95%;
+    height: 30px;
+    background-color: #FDA38A;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: none;  
+    border-radius: 5px;
+}
+select:focus {
+    outline: none; /* Retirer le contour par défaut (optionnel) */
+    background-color: #f7ac98;
+}
+#icon-loupe{
+    max-width: 100%;
+    height: auto;     /* Garde les proportions de l'image */
+}
+#icon-plat-chaud{
+    max-width: 50px;
+    height: auto;     /* Garde les proportions de l'image */
+}
+#icon-chef{
+    max-width: 50px;
+    height: auto;
+}

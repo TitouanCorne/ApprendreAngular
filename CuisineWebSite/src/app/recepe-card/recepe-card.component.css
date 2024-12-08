@@ -6,21 +6,31 @@
     align-items: center;
     margin : 20px;    
     border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Pour une transition fluide */
 }
-.recepeImage{
-    width: 60%;
+.recepeCard:hover {
+    transform: scale(1.05); /* Agrandir la div de 5% */
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.3); /* Augmenter l'ombre */
+  }
+.recepeDivImage{
+    width: 90%;
     aspect-ratio: 1; /* Le ratio de largeur/hauteur est 1:1, donc carré */
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.recepeName{
-    margin-left: 20px;
-    margin-right: 20px;
+.recepeImage{
+    width: 100%;
+    aspect-ratio: 1; /* Le ratio de largeur/hauteur est 1:1, donc carré */
+}
+.recepeNameAndOwner{    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 .recepeOwner{
-    margin-top: -10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: -4%;
 }

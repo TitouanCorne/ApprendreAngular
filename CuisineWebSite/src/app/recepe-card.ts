@@ -3,4 +3,5 @@ export interface RecepeCard {
     image : string;
     name : string;
     owner : string;
+    type : string
 }

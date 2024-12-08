@@ -9,8 +9,6 @@ import { RecepeCard } from '../recepe-card';
   styleUrl: './recepe-card.component.css'
 })
 export class RecepeCardComponent {
-  // Version finale : @Input() recepecard!: RecepeCard; //non-null assertion operator (!) and it tells the TypeScript compiler that the value of this property won't be null or undefined.
-  
   @Input() recepecard!:RecepeCard;
 
   goToDetails(id : number) {

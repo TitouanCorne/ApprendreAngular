@@ -1,7 +1,9 @@
+<app-header></app-header>
+<app-searchbar (recepeCardListTransmitted)="updateRecepeList($event)"></app-searchbar>
 <div class="recepeCardList">
     <app-recepe-card
     class="recepeCard"
     *ngFor="let item of recepeCardList"
     [recepecard]="item">
     </app-recepe-card>
-</div>
+</div> 
