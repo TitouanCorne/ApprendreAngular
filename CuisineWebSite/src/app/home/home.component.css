@@ -1,7 +1,81 @@
-.recepeCardList{
+header{
+    background-color: #D5C8E1;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Espacement interne */
+    box-sizing: border-box; /* Inclure les marges et bordures dans la taille totale */
+    margin-bottom: 40px;
 }
-.recepeCard{
-    width: 33.333%;
+#logo{
+    max-width: 20%;
+}
+main{
+    padding: 3%;
+}
+#section-login{
+    display: flex;
+}
+#div-welcome{
+    flex-grow: 3;
+}
+#btn-login{
+    background-color: #F2E8CE;
+    border-radius: 8px;
+    border: 2px solid #FDA38A; 
+    color:#FDA38A;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+button{    
+    cursor: pointer; /*indique que le bouton est cliquable*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation */
+}
+button:hover {
+    transform: scale(1.05); /* Agrandissement léger au survol */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+}
+button {
+    transform: scale(0.95); /* Effet d'enfoncement */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Réduction de l'ombre */
+}
+#div-illustration{
+    flex-grow: 1;
+}
+#section-redirection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-redirection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D5C8E1;
+    width: 100%;
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-redirection{
+    width: 25%;
+    margin-bottom: 20px;
+    background-color: rgb(0,0,0,0.7);
+    color: #D5C8E1;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    cursor: pointer; /*indique que le bouton est cliquable*/
+}
+.btn-redirection:hover{
+    background-color:  #D5C8E1;
+    color:rgb(0,0,0,0.7);
+}
+.div-description{
+    width: 90%
 }

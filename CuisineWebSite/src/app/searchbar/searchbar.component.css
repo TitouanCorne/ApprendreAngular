@@ -40,6 +40,9 @@ input:focus {
 #input-searchbar{
     border-radius: 5px 0px 0px 5px;
 }
+#input-searchbar::placeholder{
+    color:black;
+}
 .search-icon{
     background-color: #FDA38A;
     width: 2%;

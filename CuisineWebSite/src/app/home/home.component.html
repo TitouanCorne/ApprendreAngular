@@ -1,9 +1,43 @@
-<app-header></app-header>
-<app-searchbar (recepeCardListTransmitted)="updateRecepeList($event)"></app-searchbar>
-<div class="recepeCardList">
-    <app-recepe-card
-    class="recepeCard"
-    *ngFor="let item of recepeCardList"
-    [recepecard]="item">
-    </app-recepe-card>
-</div> 
+<body>
+    <header>
+        <img id="logo" src="assets/logo.png" amt="Miam'Miam"/>
+    </header>
+    <main>
+        <section id="section-login">
+            <div id="div-welcome">
+                <h1> Tous en cuisine !</h1>
+                <p>
+                    Miam'Miam te propose de partager tes recettes en famille 
+                </p>
+                <button type="button" id="btn-login">
+                    JE ME CONNECTE
+                </button>
+            </div>
+            <div id="div-illustration">
+               <img alt="Illustration" src="assets/img/cuisinier.png"/> 
+            </div>
+        </section>
+        <section id="section-redirection">
+            <div class="div-redirection">
+                <button [routerLink]="['/allrecepes']" class="btn-redirection" type="button" aria-label="Aller à la page AllRecepes">
+                    PARCOURIR LES RECETTES
+                </button>
+                <div class="div-description">
+                    <p>
+                        Régale toi en découvrant les dernières recettes
+                    </p>
+                </div>
+            </div>
+            <div class="div-redirection">
+                <button [routerLink]="['/myrecepes']" class="btn-redirection" type="button" aria-label="Aller à la page MyRecepes">
+                    MES RECETTES ENREGISTRÉES
+                </button>
+                <div  class="div-description">
+                    <p>
+                        Retrouve tes recettes favorites
+                    </p>
+                </div>
+            </div>                       
+        </section>
+    </main>
+</body>

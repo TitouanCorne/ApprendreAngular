@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RecepeCard } from '../recepe-card';
+import { Recepe } from '../recepe';
 
 @Component({
   selector: 'app-recepe-card',
@@ -9,7 +9,7 @@ import { RecepeCard } from '../recepe-card';
   styleUrl: './recepe-card.component.css'
 })
 export class RecepeCardComponent {
-  @Input() recepecard!:RecepeCard;
+  @Input() recepecard!:Recepe;
 
   goToDetails(id : number) {
     console.log("tu as cliqué sur la recette n° ", id)
