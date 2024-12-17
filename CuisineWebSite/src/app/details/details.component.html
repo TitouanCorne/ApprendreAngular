@@ -1,1 +1,43 @@
-<p>details works!</p>
+<body>
+    <app-header></app-header>
+    <main>
+        <div  id="title">
+            <h1>{{recepe?.name}}</h1>
+        </div>
+        <section id="section-image-icons">
+            <div id="img">
+                <img id="recepeImage" [src]="recepe?.image" alt="Photo de {{ recepe?.name }}"/>   
+            </div>
+            <div id="div-icon">
+                <div class="icon-row">
+                    <div class="icon" id="icon-owner">
+                        <p>{{recepe?.owner}}</p>
+                    </div>
+                    <div class="icon" id="icon-avis">
+                        <p>Avis</p>
+                    </div>                    
+                </div>
+                <div class="icon-row">
+                    <div class="icon" id="icon-preparationtime">
+                        <p>{{recepe?.preparationTime}}</p>
+                    </div>
+                    <div class="icon" id="icon-cookingtime">
+                        <p>{{recepe?.cookingTime}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="div-ingredients">
+                <h2>Ingrédients :</h2>
+                <ul>
+                    <li class="ingredient" *ngFor="let item of recepe?.ingredient"> {{item}} </li>
+                </ul>
+            </div>
+            <div class="div-remark">
+                <h2>Remarques :</h2>
+                <p> {{recepe?.remark}} </p>
+            </div>
+        </section>
+    </main>
+</body>

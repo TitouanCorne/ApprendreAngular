@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AllRecepesComponent } from './all-recepes/all-recepes.component';
+import { DetailsComponent } from './details/details.component';
 
 const routeConfig: Routes = [
     {
@@ -12,6 +13,11 @@ const routeConfig: Routes = [
         path : 'allrecepes',
         component : AllRecepesComponent,
         title : 'All recepes'
+    },
+    {
+        path : 'details/:id',
+        component : DetailsComponent,
+        title : 'Recepe details'
     }
 ];
 

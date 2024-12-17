@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Recepe } from '../recepe';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-recepe-card',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './recepe-card.component.html',
   styleUrl: './recepe-card.component.css'
 })

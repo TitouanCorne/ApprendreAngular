@@ -1,0 +1,36 @@
+#title{
+    text-align: center;
+    margin: 40px;
+}
+#recepeImage{
+    width : 50%;
+    aspect-ratio: 1;
+    border-radius: 5px;
+}
+
+#section-image-icons{
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#img{
+    display: flex;
+    width: 50%;
+    align-items : center;
+    justify-content: center;
+}
+#div-icon{
+    width: 50%;
+    background-color: blueviolet;
+}
+.icon-row{
+    display : flex;
+    background-color: aqua;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.icon{
+    background-color: rgb(127, 155, 255);
+}
