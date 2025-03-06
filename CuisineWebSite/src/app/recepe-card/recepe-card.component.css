@@ -1,4 +1,5 @@
 .recepeCard{
+    position: relative;
     background-color: #D5C8E1;
     display: flex;
     flex-direction: column;
@@ -33,4 +34,12 @@
 }
 .recepeOwner{
     margin-top: -4%;
+}
+
+#favorite-icon{
+    position: absolute;
+    top: 1.8%; /* Ajuste la distance depuis le haut */
+    right: 2%; /* Ajuste la distance depuis la gauche */
+    height: 52px;
+    width: 52px;
 }

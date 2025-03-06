@@ -8,5 +8,6 @@ export interface Recepe {
     preparationTime : string;
     ingredient : string[];
     remark : string;
-    steps : string[]
+    steps : string[];
+    favorite : boolean[]; //tableau de booléens pour savoir si la recette est en favoris pour chaque utilisateur
 }

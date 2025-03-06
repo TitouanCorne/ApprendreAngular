@@ -14,7 +14,15 @@
     justify-content: center;
     margin-bottom: 40px;
 }
-#img{
+.div-image-and-icons{
+    display: flex;
+    width: 50%;
+    align-items : center;
+    justify-content: center;
+}
+
+/* #img{
+    background-color: pink;
     display: flex;
     width: 50%;
     align-items : center;
@@ -22,15 +30,41 @@
 }
 #div-icon{
     width: 50%;
-    background-color: blueviolet;
-}
-.icon-row{
-    display : flex;
-    background-color: aqua;
-    justify-content: space-between;
-    width: 50%;
+    background-color: yellow;
+} */
+
+#div-icons{
+    width : 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon{
-    background-color: rgb(127, 155, 255);
+.icon-row{
+    display : flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{  
+    flex:1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cooking-step{
+    margin: 1%;
+}
+
+.horizontal-separation-line{
+    height: 1px;
+    background-color: grey;
+    margin-left: 3%;
+    margin-right: 3%;
 }

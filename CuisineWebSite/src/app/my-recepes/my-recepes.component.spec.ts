@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ActivatedRoute } from '@angular/router';
 import { MyRecepesComponent } from './my-recepes.component';
 
 describe('MyRecepesComponent', () => {
@@ -8,7 +8,19 @@ describe('MyRecepesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MyRecepesComponent]
+      imports: [MyRecepesComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: {
+              paramMap: {
+                get: (key: string) => null
+              }
+            }
+          }
+        }
+      ]
     })
     .compileComponents();
 
@@ -16,7 +28,6 @@ describe('MyRecepesComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });

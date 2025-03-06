@@ -1,5 +1,5 @@
 <body>
-    <header>
+    <header id="header">
         <img id="logo" src="assets/logo.png" amt="Miam'Miam"/>
     </header>
     <main>
@@ -9,9 +9,12 @@
                 <p>
                     Miam'Miam te propose de partager tes recettes en famille 
                 </p>
-                <button type="button" id="btn-login">
-                    JE ME CONNECTE
-                </button>
+                <div id="div-select-user">
+                    <label for="user-select" id="label-login"> Alors, à qui le tour de cuisiner ?</label>
+                    <select #user (change)="updateUser(user.value)" id="user-select" class="select-login" name="user-select" aria-label="Sélectionner un utilisateur">
+                        <option *ngFor="let user of usersList" [value]="user.id" [selected]="user.id === currentUser.id">{{ user.username }}</option>
+                    </select>
+                </div>
             </div>
             <div id="div-illustration">
                <img alt="Illustration" src="assets/img/cuisinier.png"/> 
@@ -29,7 +32,7 @@
                 </div>
             </div>
             <div class="div-redirection">
-                <button [routerLink]="['/myrecepes']" class="btn-redirection" type="button" aria-label="Aller à la page MyRecepes">
+                <button [routerLink]="['/myrecepes/Titouan']" class="btn-redirection" type="button" aria-label="Aller à la page MyRecepes">
                     MES RECETTES ENREGISTRÉES
                 </button>
                 <div  class="div-description">

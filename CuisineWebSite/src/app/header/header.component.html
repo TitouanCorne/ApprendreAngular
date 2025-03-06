@@ -1,5 +1,11 @@
 <div id="header">
-    <a [routerLink]="['/']">
+    <a class="logolink" [routerLink]="['/']">
         <img id="logo" src="assets/logo.png" amt="Miam'Miam"/>
-    </a>  
+    </a> 
+    <div id="div-icons">
+        <img src="../../assets/icon/icon-retour.png" alt="Back Icon" class="backbutton" id="icon-retour" (click)="goBack()" />
+        <!-- <img [routerLink]="['/myrecepees']" src="../../assets/icon/icon-retour.png" />
+        <img [routerLink]="['/myrecepees']" src="../../assets/icon/icon-retour.png" />
+        <img [routerLink]="['/myrecepees']" src="../../assets/icon/icon-retour.png" />         -->
+    </div>
 </div>

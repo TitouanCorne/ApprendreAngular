@@ -10,3 +10,9 @@
     box-sizing: border-box; /* Inclure les marges et bordures dans la taille totale */
     margin-bottom: 40px;
 }
+
+#icon-retour{
+    background-color: #D5C8E1;
+    height: 24px;
+    width: 24px;
+}

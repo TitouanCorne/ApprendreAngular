@@ -1,12 +1,13 @@
-<div class="recepeCard" [routerLink]="['/details', recepecard.id]">
-    <div class="recepeDivImage">
+<div class="recepeCard" >
+    <div class="recepeDivImage" [routerLink]="['/details', recepecard.id]">
         <img class="recepeImage"
         [src]="recepecard.image"
         alt="Photo de {{ recepecard.name }}"
-        />   
+        />
     </div>
-    <div class="recepeNameAndOwner">
-        <h2 class="recepeName" (click)="goToDetails(recepecard.id)"> {{recepecard.name}} </h2>
+    <img id="favorite-icon" [src]="isFavorite ? '../../assets/icon/icon-favoris-selected.png' : '../../assets/icon/icon-favoris-unselected.png'" alt="Star Icon" (click)="changeFavorite()"/>  
+    <div class="recepeNameAndOwner" [routerLink]="['/details', recepecard.id]">
+        <h2 class="recepeName"> {{recepecard.name}} </h2>
         <p class="recepeOwner"> de {{recepecard.owner}} </p>
     </div>
 </div>

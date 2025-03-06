@@ -1,28 +1,34 @@
 <body>
     <app-header></app-header>
     <main>
-        <div  id="title">
+        <div id="title">
             <h1>{{recepe?.name}}</h1>
         </div>
         <section id="section-image-icons">
-            <div id="img">
+            <div class="div-image-and-icons">
                 <img id="recepeImage" [src]="recepe?.image" alt="Photo de {{ recepe?.name }}"/>   
             </div>
-            <div id="div-icon">
-                <div class="icon-row">
-                    <div class="icon" id="icon-owner">
-                        <p>{{recepe?.owner}}</p>
+            <div class="div-image-and-icons">
+                <div id="div-icons">
+                    <div class="icon-row">
+                        <div class="icon" id="icon-owner">
+                            <img src="../../assets/icon/icon-chef.png" alt="Icône" width="50%" height="50%">
+                            <p>{{recepe?.owner}}</p>
+                        </div>
+                        <div class="icon" id="icon-avis">
+                            <img src="../../assets/icon/icon-comment.png" alt="Icône" width="50%" height="50%">
+                            <p>Avis</p>
+                        </div>                    
                     </div>
-                    <div class="icon" id="icon-avis">
-                        <p>Avis</p>
-                    </div>                    
-                </div>
-                <div class="icon-row">
-                    <div class="icon" id="icon-preparationtime">
-                        <p>{{recepe?.preparationTime}}</p>
-                    </div>
-                    <div class="icon" id="icon-cookingtime">
-                        <p>{{recepe?.cookingTime}}</p>
+                    <div class="icon-row">
+                        <div class="icon" id="icon-preparationtime">
+                            <img src="../../assets/icon/icon-fouet.png" alt="Icône" width="50%" height="50%">
+                            <p>{{recepe?.preparationTime}}</p>
+                        </div>
+                        <div class="icon" id="icon-cookingtime">
+                            <img src="../../assets/icon/icon-four.png" alt="Icône" width="50%" height="50%">
+                            <p>{{recepe?.cookingTime}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -36,7 +42,14 @@
             </div>
             <div class="div-remark">
                 <h2>Remarques :</h2>
-                <p> {{recepe?.remark}} </p>
+                <p> {{recepe?.remark}}</p>
+            </div>
+            <hr class="horizontal-separation-line">
+            <div id="div-cooking-steps">
+                <h2>Préparation :</h2>
+                <ol>
+                    <li class="cooking-step" *ngFor="let step of recepe?.steps"> {{step}}</li>
+                </ol>                
             </div>
         </section>
     </main>

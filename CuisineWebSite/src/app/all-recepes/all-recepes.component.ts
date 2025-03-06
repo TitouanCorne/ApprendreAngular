@@ -20,6 +20,7 @@ export class AllRecepesComponent {
   constructor() {
     this.recepeService.getAllRecepes().then((recepeList : Recepe[]) => {
       this.recepeList = recepeList;
+      console.log(this.recepeList);
     })
   }
 

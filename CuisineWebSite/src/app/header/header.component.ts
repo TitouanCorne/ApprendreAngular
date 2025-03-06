@@ -9,5 +9,8 @@ import {RouterModule} from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  constructor() { }
+  goBack(): void {
+    window.history.back();
+  }
 }
