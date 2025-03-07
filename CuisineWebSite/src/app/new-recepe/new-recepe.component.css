@@ -1,0 +1,82 @@
+/* General styles for the form container */
+.div-new-recepe {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for form labels */
+  .div-new-recepe label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Styles for form inputs */
+  .div-new-recepe input[type="text"],
+  .div-new-recepe select,
+  .div-new-recepe textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Styles for the add/remove buttons */
+  .div-new-recepe button[type="button"] {
+    background-color: #D5C8E1;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .div-new-recepe button[type="button"]:hover {
+    background-color: #d0bee0;
+  }
+  
+  /* Styles for the submit button */
+  .div-new-recepe button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .div-new-recepe button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Styles for disabled submit button */
+  .div-new-recepe button[type="submit"]:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Additional styles for form sections */
+  .div-new-recepe div {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the header component */
+  app-header {
+    margin-bottom: 20px;
+  }
+
+  .div-multiple-inputs{
+    display: flex;
+    gap: 10px;
+  }

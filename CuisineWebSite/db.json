@@ -306,7 +306,7 @@
       ],
       "favorite": [
         false,
-        true,
+        false,
         false,
         true,
         false
@@ -742,7 +742,7 @@
       "id": "2",
       "image": "/assets/img/cheeseCakeManguePassion.jpg",
       "username": "Titouan",
-      "current": true
+      "current": false
     },
     {
       "id": "3",
@@ -754,7 +754,7 @@
       "id": "4",
       "image": "/assets/img/gateauCarotte.jpg",
       "username": "Sophie",
-      "current": false
+      "current": true
     },
     {
       "id": "5",

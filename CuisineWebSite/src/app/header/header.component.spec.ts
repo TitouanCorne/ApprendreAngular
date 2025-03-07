@@ -37,7 +37,7 @@ describe('HeaderComponent', () => {
   });
 
   it('should go back when clicking on the back button', () => {
-    const backButton = fixture.debugElement.query(By.css('.backbutton')).nativeElement;
+    const backButton = fixture.debugElement.query(By.css('#icon-retour')).nativeElement;
     spyOn(component, 'goBack').and.callThrough();
     spyOn(window.history, 'back');
     backButton.click();

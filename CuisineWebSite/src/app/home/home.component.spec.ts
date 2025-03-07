@@ -43,7 +43,7 @@ describe('HomeComponent', () => {
       image: "default",
       current: true
     }; //default value to initialize
-    await component.updateUser("2");
+    await userService.updateCurrentUser("2");
     fixture.detectChanges();
     expect(component.currentUser).toBeDefined();
     if (component.currentUser !== undefined) {

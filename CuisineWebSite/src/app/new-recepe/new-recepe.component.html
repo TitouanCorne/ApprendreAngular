@@ -1,0 +1,51 @@
+<app-header></app-header>
+<div class="div-new-recepe">
+    <form (ngSubmit)="onSubmit(recepeForm)" #recepeForm="ngForm">
+        <div>
+            <label for="name">Recepe Name:</label>
+            <input type="text" id="name" required [(ngModel)]="recepe.name" name="name" #name="ngModel">
+        </div>
+        <div>
+            <label for="owner">Propriétaire :</label>
+            <input disabled type="text" id="owner" required [(ngModel)]="recepe.owner" name="owner" #owner="ngModel">
+        </div>
+        <div>
+            <label for="type">Catégorie :</label>
+            <select id="type" required [(ngModel)]="recepe.type" name="type" #type="ngModel">
+            <option value="Entrée">Entrée</option>
+            <option value="Plat">Plat</option>
+            <option value="Dessert et gateaux">Dessert et gateaux</option>
+            <option value="Boisson">Boisson</option>
+            </select>
+        </div>
+        <div>
+            <label for="cookingTime">Temps de préparation :</label>
+            <input type="text" id="cookingTime" required [(ngModel)]="recepe.cookingTime" name="cookingTime" #cookingTime="ngModel">
+        </div>
+        <div>
+            <label for="preparationTime">Temps de cuisson :</label>
+            <input type="text" id="preparationTime" required [(ngModel)]="recepe.preparationTime" name="preparationTime" #preparationTime="ngModel">
+        </div>
+        <div>
+            <label for="ingredient">Ingrédients :</label>
+            <div class="div-multiple-inputs" *ngFor="let ingredient of recepe.ingredient; let i = index; trackBy: trackByIndex">
+                <input type="text" [(ngModel)]="recepe.ingredient[i]" name="ingredient{{i}}" required>
+                <button type="button" (click)="removeIngredient(i)">Supprimer</button>
+            </div>
+            <button type="button" (click)="addIngredient()">Ajouter un ingrédient</button>
+        </div>
+        <div>
+            <label for="steps">Etapes à suivre :</label>
+            <div class="div-multiple-inputs" *ngFor="let step of recepe.steps; let i = index; trackBy: trackByIndex">
+                <input type="text" [(ngModel)]="recepe.steps[i]" name="step{{i}}" required>
+                <button type="button" (click)="removeStep(i)">Supprimer</button>
+            </div>
+            <button type="button" (click)="addStep()">Ajouter une étape</button>
+        </div>
+        <div>
+            <label for="remark">Remark:</label>
+            <input type="text" id="remark" [(ngModel)]="recepe.remark" name="remark" #remark="ngModel">
+        </div>
+        <button type="submit" [disabled]="!recepeForm.form.valid">Add Recepe</button>
+    </form>
+</div>

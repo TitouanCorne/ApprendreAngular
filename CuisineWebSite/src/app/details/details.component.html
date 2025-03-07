@@ -3,7 +3,12 @@
     <main>
         <div id="title">
             <h1>{{recepe?.name}}</h1>
+            <div id="div-delete"  (click)="deleteRecepe()" >
+                <img src="../../assets/icon/icon-supprimer.png" alt="Delete Recepe" id="icon-delete"/>
+                <p id="p-delete">Supprimer</p>
+            </div>
         </div>
+        <img src=""/>
         <section id="section-image-icons">
             <div class="div-image-and-icons">
                 <img id="recepeImage" [src]="recepe?.image" alt="Photo de {{ recepe?.name }}"/>   

@@ -11,8 +11,20 @@
     margin-bottom: 40px;
 }
 
+#div-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 20px;
+}
+
 #icon-retour{
-    background-color: #D5C8E1;
     height: 24px;
     width: 24px;
+}
+
+.icon-navbar{
+    height: 24px;
+    width: 24px;    
+    cursor: pointer; /*indique que le bouton est cliquable*/
 }

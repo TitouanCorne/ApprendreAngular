@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { AllRecepesComponent } from './all-recepes/all-recepes.component';
 import { DetailsComponent } from './details/details.component';
 import { MyRecepesComponent } from './my-recepes/my-recepes.component';
+import { NewRecepeComponent } from './new-recepe/new-recepe.component';
 
 const routeConfig: Routes = [
     {
@@ -21,9 +22,14 @@ const routeConfig: Routes = [
         title : 'Recepe details'
     },
     {
-        path : 'myrecepes/:user',
+        path : 'myrecepes',
         component : MyRecepesComponent,
         title : 'My recepes'
+    },
+    {
+        path : 'newrecepe',
+        component : NewRecepeComponent,
+        title : 'New recepe'
     }
 ];
 

@@ -1,4 +1,5 @@
 #title{
+    position: relative;
     text-align: center;
     margin: 40px;
 }
@@ -20,18 +21,6 @@
     align-items : center;
     justify-content: center;
 }
-
-/* #img{
-    background-color: pink;
-    display: flex;
-    width: 50%;
-    align-items : center;
-    justify-content: center;
-}
-#div-icon{
-    width: 50%;
-    background-color: yellow;
-} */
 
 #div-icons{
     width : 75%;
@@ -67,4 +56,20 @@
     background-color: grey;
     margin-left: 3%;
     margin-right: 3%;
+}
+#icon-delete{
+    height: 24px;
+    width: 24px;
+}
+#div-delete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 1.8%; /* Ajuste la distance depuis le haut */
+    right: 2%; /* Ajuste la distance depuis la gauche */    
+    cursor: pointer; /*indique que le bouton est cliquable*/
+}
+#p-delete{
+    margin-top: 2px;
 }

@@ -3,7 +3,8 @@
         <img id="logo" src="assets/logo.png" amt="Miam'Miam"/>
     </a> 
     <div id="div-icons">
-        <img src="../../assets/icon/icon-retour.png" alt="Back Icon" class="backbutton" id="icon-retour" (click)="goBack()" />
+        <img src="../../assets/icon/icon-retour.png" alt="Back Icon" class="icon-navbar" id="icon-retour" (click)="goBack()" />
+        <img src="../../assets/icon/icon-plus.png" alt="Add New Recepe" class="icon-navbar" id="icon-plus" [routerLink]="['/newrecepe']"/>
         <!-- <img [routerLink]="['/myrecepees']" src="../../assets/icon/icon-retour.png" />
         <img [routerLink]="['/myrecepees']" src="../../assets/icon/icon-retour.png" />
         <img [routerLink]="['/myrecepees']" src="../../assets/icon/icon-retour.png" />         -->
